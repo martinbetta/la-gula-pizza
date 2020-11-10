@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_price: 1
+  tot_quantity: 1
+  delibery_date: 2020-11-10
+  note: MyText
+  customer: one
+  pizza: one
+
+two:
+  order_price: 1
+  tot_quantity: 1
+  delibery_date: 2020-11-10
+  note: MyText
+  customer: two
+  pizza: two
