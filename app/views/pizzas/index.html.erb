@@ -1,11 +1,34 @@
-<h2>NUESTRAS PIZZAS</h2>
-<P>TODAS HECHAS EN CASA CON INGREDIENTES FRESCOS Y MUCHO AMOR</P>
+<div class="colorwhite">
+  <div class="container">
+    <h2 class= "title_index">NUESTRAS PIZZAS</h2>
+    <P class="subtitle-index">TODAS HECHAS EN CASA CON INGREDIENTES FRESCOS <br>Y MUCHO AMOR</P>
 
-<% @pizzas.each do |pizza|%>
-<ul>
+    <div class="background_index pizza_index">
+    <% @pizzas.each do |pizza|%>
+    <ul>
 
- <li><%=pizza.name%></li>
+     <li><%=pizza.name%>: <%=pizza.ingredients%> </li>
 
-</ul>
+    </ul>
 
-<%end%>
+    <%end%>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+  </div>
+    <div class="image_footer">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div>
+</div>
