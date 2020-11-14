@@ -1,0 +1,11 @@
+<h2>NUESTRAS PIZZAS</h2>
+<P>TODAS HECHAS EN CASA CON INGREDIENTES FRESCOS Y MUCHO AMOR</P>
+
+<% @pizzas.each do |pizza|%>
+<ul>
+
+ <li><%=pizza.name%></li>
+
+</ul>
+
+<%end%>
