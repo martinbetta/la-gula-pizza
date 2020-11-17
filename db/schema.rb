@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_11_10_121933) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "customers", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -29,8 +32,8 @@ ActiveRecord::Schema.define(version: 2020_11_10_121933) do
     t.integer "tot_quantity"
     t.date "delibery_date"
     t.text "note"
-    t.integer "customer_id", null: false
-    t.integer "pizza_id", null: false
+    t.bigint "customer_id", null: false
+    t.bigint "pizza_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["customer_id"], name: "index_orders_on_customer_id"
