@@ -1,22 +1,24 @@
  <div class="colorwhite">
   <div class="container">
-    <div class="home_icons">
-      <a href="https://www.instagram.com/lagula_pizza/?hl=es"target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/<34655536287>"target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
+
      <div class="d-flex justify-content-around mt-3" >
        <%= link_to "NUESTRAS PIZZAS", pizzas_path, class: "btn btn-dark menu_home"%>
-       <%= link_to "NUESTRO SERVICIO", about_path, class: "btn btn-dark menu_home"%>
+       <%= link_to "NUESTROS SERVICIOS", about_path, class: "btn btn-dark menu_home"%>
        <%= link_to "PREGUNTAS FRECUENTES", question_path, class: "btn btn-dark menu_home"%>
      </div>
-
-     <div class="banner_home"></div>
-
-      <%= link_to "HAS TU PEDIDO", pizzas_path, class: "btn button_pedido"%>
+    <%= link_to "HAZ TU PEDIDO", pizzas_path, class: "btn button_pedido"%>
+     <div>
+       <%= cl_image_tag("gulabanner_dsjmml",
+      width: 1100, height: 500, ) %>
+     </div>
 
      <div class="slogan">
        <p>PIZZAS DE VERDAD</p>
      </div>
+     <div class="home_icons">
+      <a href="https://www.instagram.com/lagula_pizza/?hl=es"target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/<34655536287>"target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
       <div class="zonas">
      <p>CASTELLDEFELS - GAVÀ MAR - LES BOTIGUES</p>
      </div>
@@ -25,5 +27,3 @@
      </div>
   </div>
 </div>
-
-
