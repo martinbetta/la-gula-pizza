@@ -1,20 +1,19 @@
  <div class="colorwhite">
   <div class="container">
     <div class="home_icons">
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-whatsapp"></i>
+      <a href="https://www.instagram.com/lagula_pizza/?hl=es"target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/<34655536287>"target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
      <div class="d-flex justify-content-around mt-3" >
-       <p class="btn btn-dark menu_home">NUESTRAS PIZZAS</p>
-       <p class="btn btn-dark menu_home">NUESTRO SERVICIO</p>
-       <p class="btn btn-dark menu_home">PREGUNTAS FRECUENTES</p>
+       <%= link_to "NUESTRAS PIZZAS", pizzas_path, class: "btn btn-dark menu_home"%>
+       <%= link_to "NUESTRO SERVICIO", about_path, class: "btn btn-dark menu_home"%>
+       <%= link_to "PREGUNTAS FRECUENTES", question_path, class: "btn btn-dark menu_home"%>
      </div>
 
      <div class="banner_home"></div>
 
-     <div class="btn button_pedido">
-      <p>HAS TU PEDIDO</p>
-     </div>
+      <%= link_to "HAS TU PEDIDO", pizzas_path, class: "btn button_pedido"%>
+
      <div class="slogan">
        <p>PIZZAS DE VERDAD</p>
      </div>

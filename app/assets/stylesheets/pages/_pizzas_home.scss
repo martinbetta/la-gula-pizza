@@ -1,6 +1,7 @@
 .colorwhite{
   background-color: white;
   padding-top: 70px;
+  padding-bottom: 100px;
 }
 .background_index{
  // background-image: url("background_index.png");
@@ -11,10 +12,14 @@
 }
 
 .image_footer{
+  display: flex;
+  justify-content:center;
   background-image: url("footer_image.png");
   background-size: 80px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 100px;
+  margin-bottom: px;
 }
 
 .title_index{
