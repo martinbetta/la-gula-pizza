@@ -7,17 +7,11 @@
     <% @pizzas.each do |pizza|%>
     <ul>
 
-     <li><%=pizza.name%>: <%=pizza.ingredients%> </li>
-
+     <li><%=pizza.name.upcase%>: <%=pizza.ingredients%>.</li>
+     <%=pizza.price%> <i class="fas fa-euro-sign"></i>
     </ul>
 
     <%end%>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
     </div>
 
   </div>
@@ -29,6 +23,5 @@
       <br>
       <br>
       <br>
-
     </div>
 </div>
