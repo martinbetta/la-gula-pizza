@@ -7,8 +7,9 @@
       <% @pizzas.each do |pizza|%>
       <ul>
 
-       <li><%=pizza.name.upcase%>: <%=pizza.ingredients%>.</li>
-       <%=pizza.price%> <i class="fas fa-euro-sign"></i>
+       <li><%=pizza.name.upcase%>: <%=pizza.price%> <i class="fas fa-euro-sign"></i> </li>
+       <%=pizza.ingredients%>.
+
       </ul>
 
       <%end%>
