@@ -11,6 +11,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 #   gem 'sqlite3'
 # end
 gem 'pg'
+gem 'dotenv-rails', groups: [:development, :test]
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
