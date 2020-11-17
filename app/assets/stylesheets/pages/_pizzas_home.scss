@@ -14,7 +14,8 @@
 .image_footer{
   display: flex;
   justify-content:center;
-  background-image: url("footer_image.png");
+  // background-image: cloudinary-url("logo_gpvujf", $width: 50, $height: 50,$crop: "scale", $radius: 10);
+  // background-image: url("footer_image.png");
   background-size: 80px;
   background-repeat: no-repeat;
   background-position: center;
