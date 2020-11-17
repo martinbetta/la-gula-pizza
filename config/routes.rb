@@ -4,4 +4,6 @@ Rails.application.routes.draw do
    resources :pizzas, only: [:index, :show] do
     resources :orders, only: [:create]
   end
+  get '/question', to: 'pages#question'
+  get '/about', to: 'pages#about'
 end
