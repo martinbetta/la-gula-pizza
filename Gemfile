@@ -12,6 +12,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # end
 gem 'pg'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary', '~> 1.16.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
