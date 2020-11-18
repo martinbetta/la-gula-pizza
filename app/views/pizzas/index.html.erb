@@ -7,19 +7,19 @@
       <% @pizzas.each do |pizza|%>
       <ul>
 
-       <li><%=pizza.name.upcase%>: <%=pizza.price%> <i class="fas fa-euro-sign"></i> </li>
-       <%=pizza.ingredients%>.
+      <li><%=pizza.name.upcase%>: <%=pizza.price%> <i class="fas fa-euro-sign"></i> </li>
+      <%=pizza.ingredients%>.
 
       </ul>
 
       <%end%>
     </div>
     <p class="subtitle-index">PIZZAS  AL MOLDE DE MEDIA MASA <br> TE RECOMENDAMOS UN PIZZA PARA DOS PERSONAS</p>
-  </div>
-     <div class="image_footer">
+    <div class="image_footer">
     <a href="/">
-       <%= cl_image_tag("logo_gpvujf",
-      width: 100, height:150, ) %>
+    <%= cl_image_tag("logo_gpvujf",
+    width: 100, height:150, ) %>
     </a>
-     </div>
+    </div>
+  </div>
 </div>
