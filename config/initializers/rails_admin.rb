@@ -8,6 +8,20 @@ RailsAdmin.config do |config|
   # end
   # config.current_user_method(&:current_user)
 
+  config.authenticate_with do
+  # this is a rails controller helper
+  authenticate_or_request_with_http_basic('Login required') do |username, password|
+
+    # Here we're checking for username & password provided with basic auth
+    resource = Admin.find_by(email: username)
+
+    # we're using devise helpers to verify password and sign in the user
+    if resource.valid_password?(password)
+      sign_in :admin, resource
+    end
+  end
+end
+
   ## == CancanCan ==
   # config.authorize_with :cancancan
 

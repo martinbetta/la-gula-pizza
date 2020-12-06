@@ -10,6 +10,8 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # group :development, :test do # <<<< :development, not devlopment
 #   gem 'sqlite3'
 # end
+gem 'dotenv-rails', groups: [:development, :test]
+
 gem 'pg'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
@@ -27,6 +29,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
+gem 'devise'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
